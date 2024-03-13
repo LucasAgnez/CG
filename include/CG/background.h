@@ -11,7 +11,7 @@ class Background{
         std::vector<RGBColor> pixels, corners;
 
     public:
-        void generate(std::string filename);
+        void generate_ppm(std::string filename);
         void set_pixel(int x, int y, RGBColor color);
         void interpolate();
         Background(int h, int w, std::vector<RGBColor> c);

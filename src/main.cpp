@@ -6,6 +6,6 @@ int main(int argc, char** argv){
     std::vector<RGBColor> p = {{255,0,0},{0,255,0},{0,0,255},{0,255,255}};
     Background G(100, 100, p);
     G.interpolate();
-    G.generate("teste");
+    G.generate_ppm("teste");
     return 1;
 }

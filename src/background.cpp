@@ -43,7 +43,7 @@ void Background::interpolate(){
 }
 
 
-void Background::generate(std::string filename){
+void Background::generate_ppm(std::string filename){
 	 std::ofstream file("./images/"+filename+".ppm", std::ios::out | std::ios::binary);
 	 if (!file) {
 		  std::cerr << "Error: Unable to open file for writing." << std::endl;
