@@ -17,6 +17,10 @@ void Background::set_pixel(int x, int y, RGBColor color) {
 	}
 }
 
+RGBColor Background::get_pixel(int x, int y) {
+	return pixels[y * width + x];
+}
+
 void Background::interpolate(){
 	enum Corners_e {
 		bl=0, //!< Bottom left corner.
